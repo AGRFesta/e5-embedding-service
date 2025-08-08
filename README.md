@@ -1,6 +1,6 @@
 # E5 Embedder API
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://semver.org)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://semver.org)
 
 This is a simple FastAPI-based service that provides two main endpoints:
 
@@ -36,10 +36,10 @@ Make sure the directory structure is like this:
 
 ## 🛠 Build the Docker Image
 
-You can build the Docker image and assign it a specific version (e.g. `v0.1.0`):
+You can build the Docker image and assign it a specific version (e.g. `0.2.0`):
 
 ```bash
-docker build -t e5-embedder:v0.1.0 .
+docker build -t e5-embedder:0.2.0 .
 ```
 
 ---
@@ -49,7 +49,7 @@ docker build -t e5-embedder:v0.1.0 .
 To run the service and expose it on port 8000:
 
 ```bash
-docker run -p 8000:8000 e5-embedder:v0.1.0
+docker run -p 8000:8000 e5-embedder:0.2.0
 ```
 
 The API will be accessible at: [http://localhost:8000](http://localhost:8000)
@@ -128,7 +128,7 @@ docker rm <container_id>
 To remove the image:
 
 ```bash
-docker rmi e5-embedder:v0.1.0
+docker rmi e5-embedder:0.2.0
 ```
 
 ---
